@@ -3,7 +3,7 @@
 
 
 ## Description
-**You can view all Pokémon on the main page. Use infinite scroll to browse, search by name, and filter by type. Additionally, you can click on any Pokémon to be redirected to its individual page.**
+**You can view all Pokémon on the main page. Use infinite scroll to browse, search by name, and filter by type. Additionally, you can click on any Pokémon to be redirected to its individual page. The project is built using React, React Router, Redux, Ant Design (AntD) for UI components, Axios for API requests, and SCSS for styling.**
 
 ## Steps to run the project
 
