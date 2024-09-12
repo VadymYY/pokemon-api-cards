@@ -1,0 +1,93 @@
+@import '../../../App.scss';
+@import '../../../Variables.scss';
+
+.pokemon-list-page {
+    .pokemon-toolbar-section {
+        margin-bottom: 40px;
+
+        div.ant-select {
+            width: 100%;
+            margin-left: -14px;
+
+            .ant-select-selector {
+                @include custom-antd-border;
+                height: 34px;
+
+                .ant-select-selection-placeholder {
+                    color: #486263;
+                }
+            }
+
+            &.ant-select-single.ant-select-allow-clear.ant-select-show-arrow:hover
+                .ant-select-selector,
+            &.ant-select-focused.ant-select-single.ant-select-allow-clear.ant-select-show-arrow
+                .ant-select-selector {
+                background: $card-background-hover;
+                border-color: $border-green;
+            }
+        }
+
+        span.ant-input-group-wrapper {
+            .ant-input-affix-wrapper {
+                @include custom-antd-border;
+
+                input.ant-input {
+                    background: $card-background;
+
+                    div#placeholder {
+                        color: #486263;
+                    }
+                }
+
+                input::placeholder {
+                    color: #486263;
+                }
+            }
+
+            &:hover {
+                .ant-input-affix-wrapper,
+                input.ant-input {
+                    background: $card-background-hover;
+                }
+            }
+        }
+
+        button.ant-btn {
+            background: $border-green;
+            height: 34px;
+        }
+    }
+
+    .pokemon-list {
+        .infinite-scroll-component {
+            padding-top: 10px;
+        }
+
+        .pokemon-list-item {
+            @include display-flex-configuration;
+            @include items-border;
+
+            width: 98%;
+            border-radius: 18px;
+
+            font-size: 60px;
+            margin-bottom: 20px;
+
+            font-weight: bold;
+        }
+
+        .pokemon-list-item:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background: $card-background-hover;
+            cursor: pointer;
+
+            transform: rotateY(12deg);
+        }
+
+        @media screen and (max-width: 600px) {
+            .pokemon-list-item {
+                font-size: 30px;
+            }
+        }
+    }
+}

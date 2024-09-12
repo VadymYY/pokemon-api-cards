@@ -1,0 +1,45 @@
+@import '../../../App.scss';
+@import '../../../Variables.scss';
+
+div.pokemon-data-main-page {
+    @include items-border;
+
+    .pokemon-back-button-wrapper {
+        @include display-flex-configuration;
+        margin: 10px;
+
+        button.ant-btn {
+            border: 2px $border-green solid;
+
+            span {
+                font-weight: bold;
+                color: $border-green;
+            }
+        }
+
+        button.ant-btn:hover {
+            background: $card-background-hover;
+            cursor: pointer;
+        }
+    }
+
+    div.pokemon-image-section {
+        @include display-flex-configuration;
+
+        margin-bottom: 30px;
+
+        div.pokemon-stats {
+            font-size: 26px;
+            font-weight: bold;
+        }
+    }
+
+    div.pokemon-moves {
+        padding-left: 30px;
+
+        div.ant-col {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}

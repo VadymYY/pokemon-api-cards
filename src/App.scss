@@ -1,0 +1,25 @@
+@import './Variables.scss';
+
+@mixin items-border {
+    border-radius: 18px;
+    border: 2px $border-green solid;
+    background: $card-background;
+    color: #486263;
+}
+
+@mixin display-flex-configuration {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@mixin custom-antd-border {
+    border: 2px $border-green solid;
+    background: $card-background;
+}
+
+body {
+    background: #e8f6fab8;
+    padding: 2% 10%;
+}
