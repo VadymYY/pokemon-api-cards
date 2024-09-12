@@ -1,4 +1,6 @@
 # PokemonTask
+![зображення](https://github.com/user-attachments/assets/86a01450-240b-4f38-a856-38bcfc4b3c52)
+
 
 ## Steps to run the project
 
